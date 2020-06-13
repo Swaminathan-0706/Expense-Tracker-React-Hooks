@@ -1,8 +1,21 @@
 import React from 'react';
+import './App.css';
+import Header from './Components/Header';
+import Balance from './Components/Balance';
+import IncomeExpenses from './Components/IncomeExpenses';
+import TransactionList from './Components/TransactionList';
+import AddTransaction from './Components/AddTransaction';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Header/>
+      <div className="container">
+        <Balance/>
+        <IncomeExpenses/>
+        <TransactionList/>
+        <AddTransaction/>
+      </div>
       
     </div>
   );
