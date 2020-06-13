@@ -6,9 +6,7 @@ function IncomeExpenses() {
   const{transactions}=useContext(GlobalContext);
   
   const amount=transactions.map(x=>x.amount);
-  console.log(amount);
   const income=amount.filter(x=>(x>0)).reduce((acc,item)=>(acc+=item),0)
-  console.log(income);
   const expense=amount.filter(x=>(x<0)).reduce((acc,item)=>(acc+=item),0)
 
 
